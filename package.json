@@ -11,18 +11,27 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "eslint": "eslint \"src/**/*.{js,astro}\""
   },
   "dependencies": {
+    "@astrojs/react": "^6.0.4",
     "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
     "astro": "^7.2.9",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "tailwindcss": "^4.3.3"
   },
   "allowScripts": {
     "esbuild": true
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^8.68.0",
     "daisyui": "^5.7.22",
+    "eslint": "^10.9.1",
+    "eslint-plugin-astro": "^3.1.0",
     "prettier": "3.9.6",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.8.1"
