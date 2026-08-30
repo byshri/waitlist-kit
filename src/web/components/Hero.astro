@@ -1,0 +1,24 @@
+---
+import WaitlistForm from "./WaitlistForm.tsx";
+import WaitlistCounter from "./WaitlistCounter.tsx";
+---
+
+<section class="mx-auto w-full max-w-2xl px-6 pt-24 pb-16 text-center sm:pt-28">
+  <h1 class="text-base-content text-5xl font-bold tracking-tight sm:text-6xl">
+    Relay
+  </h1>
+
+  <div class="text-base-content/70 mt-6 space-y-1 text-lg">
+    <p>Something big is coming.</p>
+    <p>Join the waitlist for early access 🔥</p>
+    <p>Estimated launch: Mid 2026</p>
+  </div>
+
+  <div class="mt-10">
+    <WaitlistForm client:load />
+  </div>
+
+  <div class="mt-8">
+    <WaitlistCounter client:visible count={2847} />
+  </div>
+</section>

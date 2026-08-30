@@ -1,0 +1,14 @@
+---
+import type { Feature } from "../data/features";
+
+type Props = Feature;
+
+const { title, description } = Astro.props;
+---
+
+<article class="card bg-base-200">
+  <div class="card-body">
+    <h3 class="card-title text-base-content">{title}</h3>
+    <p class="text-base-content/70">{description}</p>
+  </div>
+</article>

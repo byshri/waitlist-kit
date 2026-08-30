@@ -1,0 +1,10 @@
+---
+import FeatureCard from "./FeatureCard.astro";
+import { features } from "../data/features";
+---
+
+<section aria-label="Why join" class="mx-auto w-full max-w-5xl px-6 pb-24">
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+    {features.map((feature) => <FeatureCard {...feature} />)}
+  </div>
+</section>
