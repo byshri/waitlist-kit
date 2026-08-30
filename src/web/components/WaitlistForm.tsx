@@ -61,7 +61,7 @@ export default function WaitlistForm() {
     >
       <div className="join w-full">
         <label
-          className={`input outline-none join-item flex-1 ${isError ? "input-error" : ""}`}
+          className={`input join-item flex-1 outline-none ${isError ? "input-error" : ""}`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

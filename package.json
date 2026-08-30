@@ -10,9 +10,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "dev:worker": "wrangler dev",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "eslint": "eslint \"src/**/*.{js,astro}\""
+    "eslint": "eslint \"src/**/*.{js,astro}\"",
+    "dev:all": "concurrently \"bunx --bun astro dev\" \"bun run dev:worker\""
   },
   "dependencies": {
     "@astrojs/react": "^6.0.4",
@@ -20,15 +22,18 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
     "astro": "^7.2.9",
+    "hono": "^4.13.5",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "tailwindcss": "^4.3.3"
+    "tailwindcss": "^4.3.3",
+    "wrangler": "^4.127.1"
   },
   "allowScripts": {
     "esbuild": true
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.68.0",
+    "concurrently": "^10.0.5",
     "daisyui": "^5.7.22",
     "eslint": "^10.9.1",
     "eslint-plugin-astro": "^3.1.0",
