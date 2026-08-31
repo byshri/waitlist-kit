@@ -2,17 +2,29 @@
   "name": "waitlist-kit",
   "main": "src/server/index.ts",
   "compatibility_date": "2026-08-28",
-
   "assets": {
     "binding": "ASSETS",
     "directory": "./dist"
   },
-
+  "d1_databases": [
+    {
+      "binding": "local_d1",
+      "database_name": "local-d1",
+      "database_id": "usr_test_7f3a9c21d84e"
+    }
+  ],
   "env": {
     "staging": {
       "vars": {
         "ENVIRONMENT": "staging"
-      }
+      },
+      "d1_databases": [
+        {
+          "binding": "staging_d1",
+          "database_name": "staging-d1",
+          "database_id": "98488f99-8dbc-4019-8703-3e631fbb502f"
+        }
+      ]
     },
     "production": {
       "vars": {
