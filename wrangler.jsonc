@@ -8,9 +8,11 @@
   },
   "d1_databases": [
     {
-      "binding": "local_d1",
+      "binding": "DB",
       "database_name": "local-d1",
-      "database_id": "usr_test_7f3a9c21d84e"
+      "database_id": "usr_test_7f3a9c21d84e",
+      "migrations_dir": "drizzle",
+      "migrations_pattern": "drizzle/*/migration.sql"
     }
   ],
   "env": {
@@ -20,9 +22,11 @@
       },
       "d1_databases": [
         {
-          "binding": "staging_d1",
+          "binding": "DB",
           "database_name": "staging-d1",
-          "database_id": "98488f99-8dbc-4019-8703-3e631fbb502f"
+          "database_id": "98488f99-8dbc-4019-8703-3e631fbb502f",
+          "migrations_dir": "drizzle",
+          "migrations_pattern": "drizzle/*/migration.sql"
         }
       ]
     },

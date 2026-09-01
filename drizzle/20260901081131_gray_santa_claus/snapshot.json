@@ -1,0 +1,130 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "id": "09e95378-4a2a-492b-b31a-cfd1b1e07129",
+  "prevIds": ["00000000-0000-0000-0000-000000000000"],
+  "ddl": [
+    {
+      "name": "subscribers",
+      "entityType": "tables"
+    },
+    {
+      "type": "integer",
+      "notNull": false,
+      "autoincrement": true,
+      "default": null,
+      "generated": null,
+      "name": "id",
+      "entityType": "columns",
+      "table": "subscribers"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "email",
+      "entityType": "columns",
+      "table": "subscribers"
+    },
+    {
+      "type": "integer",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "email_verified",
+      "entityType": "columns",
+      "table": "subscribers"
+    },
+    {
+      "type": "integer",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "unsubscribed",
+      "entityType": "columns",
+      "table": "subscribers"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "confirmation_token",
+      "entityType": "columns",
+      "table": "subscribers"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "traffic_source",
+      "entityType": "columns",
+      "table": "subscribers"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "device",
+      "entityType": "columns",
+      "table": "subscribers"
+    },
+    {
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "created_at",
+      "entityType": "columns",
+      "table": "subscribers"
+    },
+    {
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "updated_at",
+      "entityType": "columns",
+      "table": "subscribers"
+    },
+    {
+      "columns": ["id"],
+      "nameExplicit": false,
+      "name": "subscribers_pk",
+      "table": "subscribers",
+      "entityType": "pks"
+    },
+    {
+      "columns": ["email"],
+      "nameExplicit": false,
+      "name": "subscribers_email_unique",
+      "entityType": "uniques",
+      "table": "subscribers"
+    },
+    {
+      "columns": ["confirmation_token"],
+      "nameExplicit": false,
+      "name": "subscribers_confirmation_token_unique",
+      "entityType": "uniques",
+      "table": "subscribers"
+    },
+    {
+      "value": "\"email\" GLOB '*@*.*'",
+      "name": "email_format_check",
+      "entityType": "checks",
+      "table": "subscribers"
+    }
+  ],
+  "renames": []
+}
